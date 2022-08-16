@@ -1,0 +1,97 @@
+.main-modal.open .modal-bg,
+.main-modal.open .modal-window {
+  opacity: 1;
+  z-index: 10;
+}
+
+.main-modal.hidden .modal-bg,
+.main-modal.hidden .modal-window {
+  opacity: 0;
+  z-index: 1;
+}
+
+.modal-window, .modal-bg {
+  opacity: 0;
+  z-index: -1;
+}
+
+.main-modal.open .modal-window {
+  transform: translateY(80px);
+}
+
+.main-modal.hidden .modal-window {
+  transform: translateY(-200px);
+}
+
+.main-modal.hidden .modal-bg {
+  transition: 0.4s ease-out;
+  background: rgba(0, 0, 0, 0);
+}
+
+.modal-bg {
+  position: absolute;
+  max-width: 100%;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.modal-window {
+  max-width: 350px;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(247, 244, 244);
+  transform: translateY(-500px);
+  transition: 0.5s ease-out;
+}
+.modal-window .modal-header {
+  padding: 20px 20px;
+  display: flex;
+}
+.modal-window .modal-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal-window .modal-content .modal-body {
+  max-width: 100%;
+  padding: 10px 20px;
+}
+.modal-window .modal-content .modal-body input {
+  height: 50px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  width: 100%;
+  border: 1px solid rgb(173, 171, 171);
+  border-radius: 15px;
+}
+.modal-window .modal-content .modal-body .text {
+  padding: 15px 0 70px 10px;
+  resize: none;
+  width: 100%;
+  outline: none;
+  overflow-y: hidden;
+  border-radius: 15px;
+  border: 1px solid rgb(173, 171, 171);
+}
+.modal-window .modal-content .modal-footer {
+  max-width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  gap: clamp(0.813rem, 0.653rem + 0.8vw, 1.25rem);
+  justify-content: right;
+}
+.modal-window .modal-content .modal-footer .cancel-btn {
+  color: red;
+}
+.modal-window .modal-content .modal-footer .send-btn {
+  color: rgb(29, 197, 13);
+}/*# sourceMappingURL=modal.css.map */
