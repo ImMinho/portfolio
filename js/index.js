@@ -33,7 +33,6 @@ const renderFooter = () => {
     <p class="footer__text">${currentYear} | MINHO | All rights reserved</p>`;
 
   footer__wrap.insertAdjacentHTML("beforeend", renderStr);
-  console.log(currentYear)
 };
 
 renderFooter();
