@@ -168,7 +168,7 @@ legend {
   }
   .page .hero .container__content {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   .page .hero .container__content .hero__img img {
     max-width: 200px;
@@ -222,11 +222,25 @@ legend {
   }
 }
 @media (max-width: 375px) {
+  .page .hero .container__content {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 20px;
+  }
   .page .hero .container__content .hero__img img {
-    max-width: 170px;
+    max-width: 220px;
+  }
+  .page .hero .container__content .hero__content {
+    margin-left: 10px;
+  }
+  .page .hero .container__content .hero__content .hero__btn {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
   }
   .page .hero .container__content .hero__content .hero__text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .page .skills .skills__content .skills__hero img {
     max-width: 190px;
@@ -244,7 +258,7 @@ legend {
 }
 @media (max-width: 360px) {
   .page .hero .container__content .hero__img img {
-    max-width: 160px;
+    max-width: 230px;
   }
   .page .hero .container__content .hero__content .hero__text {
     font-size: 1.2rem;
@@ -325,11 +339,13 @@ body {
 }
 .page .hero .container__content .hero__img {
   max-width: 100%;
+  display: flex;
+  justify-content: left;
 }
 .page .hero .container__content .hero__img img {
   max-width: 350px;
   filter: drop-shadow(15px 8px 7px rgb(10, 10, 10));
-  transform: translate(0px, -150px);
+  transform: translate(0px, -100px);
   opacity: 0;
   transition: all 0.7s ease 0.5s;
 }
@@ -343,7 +359,6 @@ body {
   margin-right: clamp(1.25rem, 0.956rem + 1.47vw, 1.875rem);
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
   text-align: start;
 }
 .page .hero .container__content .hero__content .hero__text {
@@ -352,7 +367,7 @@ body {
   min-width: 150px;
   color: rgb(225, 225, 225);
   text-shadow: 5px 7px 3px rgb(5, 5, 5);
-  transform: translate(0px, 150px);
+  transform: translate(0px, 50px);
   opacity: 0;
   transition: all 0.7s ease 0.5s;
 }
@@ -367,7 +382,8 @@ body {
   display: flex;
 }
 .page .hero .container__content .hero__content .hero__btn .start-btn {
-  transform: translate(0px, 150px);
+  text-align: center;
+  transform: translate(0px, 50px);
   opacity: 0;
   transition: all 0.7s ease 0.7s;
 }
@@ -376,9 +392,9 @@ body {
   opacity: 1;
 }
 .page .hero .container__content .hero__content .hero__btn .send-message {
-  transform: translate(0px, 150px);
+  transform: translate(0px, 50px);
   opacity: 0;
-  transition: all 0.7s ease 0.9s;
+  transition: all 0.7s ease 0.7s;
 }
 .page .hero .container__content .hero__content .hero__btn .send-message._active {
   transform: translate(0px, 0px);
@@ -390,7 +406,7 @@ body {
   border-radius: 10px;
   margin: 5px;
   padding: 10px 35px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   box-shadow: 10px 10px 20px 0 rgb(0, 0, 0);
   color: rgb(230, 222, 222);

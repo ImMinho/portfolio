@@ -55,10 +55,12 @@ body {
             justify-content: space-between;
             .hero__img{
                 max-width: 100%;
+                display: flex;
+                justify-content: left; 
                 img{
                     max-width: 350px;    
                     filter: drop-shadow(15px 8px 7px rgb(10, 10, 10));
-                    transform: translate(0px, -150px);
+                    transform: translate(0px, -100px);
                     opacity: 0;
                     transition: all .7s ease .5s;
                 }
@@ -73,7 +75,7 @@ body {
                 margin-right: clamp(1.25rem, 0.956rem + 1.47vw, 1.875rem);
                 justify-content: center;
                 flex-direction: column;
-                align-items: flex-start;
+                // align-items: flex-start;
                 text-align: start;
                 .hero__text{
                     white-space: wrap;
@@ -81,7 +83,7 @@ body {
                     min-width: 150px;
                     color: rgb(225, 225, 225);
                     text-shadow: 5px 7px 3px rgb(5, 5, 5);
-                    transform: translate(0px, 150px);
+                    transform: translate(0px, 50px);
                     opacity: 0;
                     transition: all .7s ease .5s;
                     span{
@@ -95,7 +97,8 @@ body {
                 .hero__btn {
                     display: flex;
                     .start-btn{
-                      transform: translate(0px, 150px);
+                      text-align: center;
+                      transform: translate(0px, 50px);
                       opacity: 0;
                       transition: all .7s ease .7s;
                     }
@@ -104,9 +107,9 @@ body {
                       opacity: 1;
                     }  
                     .send-message{
-                      transform: translate(0px,150px);
+                      transform: translate(0px,50px);
                       opacity: 0;
-                      transition: all .7s ease .9s;
+                      transition: all .7s ease .7s;
                     }
                     .send-message._active{
                       transform: translate(0px, 0px);
@@ -119,7 +122,7 @@ body {
                     border-radius: 10px;
                     margin: 5px;
                     padding: 10px 35px;
-                    text-align: center;
+                    text-align: left;
                     text-transform: uppercase;
                     box-shadow: 10px 10px 20px 0 rgb(0, 0, 0);
                     color: rgb(230, 222, 222); 

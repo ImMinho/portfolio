@@ -135,11 +135,26 @@
   }
 }
 @media (max-width: 375px) {
+  .page .hero .container__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    flex-direction: column;
+    gap: 10px;
+  }
   .page .hero .container__content .hero__img img {
-    max-width: 170px;
+    max-width: 230px;
+  }
+  .page .hero .container__content .hero__content {
+    margin-left: 10px;
+  }
+  .page .hero .container__content .hero__content .hero__btn {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
   }
   .page .hero .container__content .hero__content .hero__text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .page .skills .skills__content .skills__hero img {
     max-width: 190px;
@@ -157,7 +172,7 @@
 }
 @media (max-width: 360px) {
   .page .hero .container__content .hero__img img {
-    max-width: 160px;
+    max-width: 230px;
   }
   .page .hero .container__content .hero__content .hero__text {
     font-size: 1.2rem;
