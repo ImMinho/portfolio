@@ -134,7 +134,7 @@
     font-size: 10px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 395px) {
   .page .hero .container__content {
     display: flex;
     align-items: flex-start;
