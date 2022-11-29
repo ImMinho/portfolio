@@ -153,6 +153,11 @@
     gap: 8px;
     flex-direction: row;
   }
+  .page .hero .container__content .hero__content .hero__btn button {
+    width: 140px;
+    height: 62px;
+    font-size: 18px;
+  }
   .page .hero .container__content .hero__content .hero__text {
     font-size: 1.5rem;
   }
